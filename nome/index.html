@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body ng-app = "nomeApp">
+
+
+
+        <div class = "container" ng-controller="nomeController" ng-init="getLocation()">
+         
+            <div class = "alert alert-info">
+
+            </div>
+
+            <div class = "label label-info" id = "demo" ng-click="getAlert()">
+
+            </div>
+
+            <div class = "alert alert-info">
+              <input type="button"  class = "buttom button-warning" value= "show on map" ng-click="showOnMap()"></input>
+            </div
+
+            <center>
+            <div id = "mapholder" class = "img img-responsive">      
+
+            </div>
+            </center>
+            <input type="text" id="txtLatitude" ng-model="latitude" />
+
+            <input type="text" id="txtLongitude" ng-model="longitude" />
+
+            <h3 id = "locationText">{{getAdderess}}</h3>
+
+        </div>
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        
+
+
+</body>
+</html>
